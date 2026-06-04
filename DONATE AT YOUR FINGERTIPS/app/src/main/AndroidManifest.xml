@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Donation_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".RecevierDash"
+            android:exported="false" />
+        <activity
+            android:name=".Donordash"
+            android:exported="false" />
+        <activity
+            android:name=".Recevierhistory"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".History" />
+        <activity
+            android:name=".Donorhistory"
+            android:exported="false" />
+        <activity
+            android:name=".Clothdetails"
+            android:exported="false" />
+        <activity
+            android:name=".Bookdeatils"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".recevierregister"
+            android:exported="false" />
+        <activity
+            android:name=".receriverlogin"
+            android:exported="false" />
+        <activity
+            android:name=".Showbook"
+            android:exported="false" />
+        <activity
+            android:name=".Booklocation"
+            android:exported="true" />
+        <activity
+            android:name=".clothlocation"
+            android:exported="true" />
+        <activity
+            android:name=".Showfood"
+            android:exported="true" />
+        <activity
+            android:name=".Foodlocation"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".Details"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCloth"
+            android:exported="false" />
+        <activity
+            android:name=".Addbook"
+            android:exported="true" />
+        <activity
+            android:name=".Addcloth"
+            android:exported="true" />
+        <activity
+            android:name=".Addfood"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
